@@ -12,12 +12,10 @@
     * the image selected is displayed here
     <br>
     ***PROPERTIES***  
-    -arrayPics (array listing file name of each image)  
-    -arrayAlt (object listing the alt text for each image)
-    -displayImage (displays image selected)  
-    -full-img (css)
-    -EventListener (click)
-    <br>
+    -array: images (array listing file name of each image)  
+    -array: altText (object listing the alt text for each image)  
+    -displayedImg (displayed selected image)  
+    -.full-img (css)  
     <br>
 2. **DARKEN FEATURE:**
     * button that darkens or lightens the image when clicked
@@ -25,17 +23,18 @@
     * removes overlay to lighten image
     <br> 
     ***PROPERTIES***  
-    -drkBtn (button)
-    -overlay (css)
-    -EventListener (click)
-    <br>
+    -drkBtn (button)  
+    -EventListener: changeBtn (click to place or remove overlay)  
+    -.overlay (css)  
+    -button (css)  
     <br>
 3. **THUMBNAIL IMAGES BAR:**
     * row(s) of the images in a thumbnail size
     * all thumbnails need to be the same size vertically, (20%)
     * clicking on thumbnail displays full image in Large Image Box  
     ***PROPERTIES***  
-    -arrayPics20h  
+    -thumbBar (thumbnail images)  
+    -EventListener: newImage (click for a new displayedImg)  
     -thumb-bar (css)
     <br>
     <br>
@@ -45,24 +44,36 @@
 
 **IMAGE GALLERY**  
 
-    FUNCTION thumb-bar
-        * displays full-img
-        * displays darkLightButton
+    FUNCTION: display image in Large Image Box
+        * displayedImg
+        * images
+        * altText
+        
+    FUNCTION: click button
+        * drkBtn
+        * changeBtn
+    
+    FUNCTION: display thumbnail images
+        * thumbBar
 
-    FUNCTION click darkLightButton
-        * displays overlay over full-img
-        * removes overlay
+    FUNCTION: change displayed image when thumbnail is clicked    
+        * newImage
 
 **EXTRA**
 
-    FUNCTION randomImage
-        * selects a random image display as the full.img  
+    FUNCTION: randomly selects a displayedImg
+        * randomImage
 
 ## START: Start program
 
-    largeImgBox
-    randomImg
-    darkLightButton
+    full-img
+        displayedImg
+        image
+        altText
+        overlay
+        drkBtn
+        changeBtn
     thumbBar
+        newImage
 
 ## END: End program  
