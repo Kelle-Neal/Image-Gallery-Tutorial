@@ -5,37 +5,41 @@
 <br>
 - When a thumbnail is clicked it will display the large version of the image above the set of thumbnails.
 <br>
-- Create a button that will be displayed on the large image that will allow the user to darken the image and then lighten the image back to the original lighter image. 
+- A button will be displayed on the large image that will allow the user to darken the image and then lighten the image.
 
-## INIT: Create variables, Define variables and List variable properties.
+## INIT: Create, define and list variable properties.
 1. **LARGE IMAGE BOX:**
-    * array of images in the full size
-    * the full version of the image is displayed here when thumbnail is clicked
-    * would like for it to display a random full image when page is pulled up  
-    **PROPERTIES**  
-    -arrayPics  
-    -full-img  
-    -randomImg
+    * the image selected is displayed here
+    <br>
+    ***PROPERTIES***  
+    -arrayPics (array listing file name of each image)  
+    -arrayAlt (object listing the alt text for each image)
+    -displayImage (displays image selected)  
+    -full-img (css)
+    -EventListener (click)
     <br>
     <br>
 2. **DARKEN FEATURE:**
-    * a button that darkens or lightens the image when clicked
-    * uses a semi-transparent background color over top of the large image to darken it.  
-    **PROPERTIES**  
-    -darkLightButton  
-    -overlay
+    * button that darkens or lightens the image when clicked
+    * uses a semi-transparent overlay on top of the full image to darken image
+    * removes overlay to lighten image
+    <br> 
+    ***PROPERTIES***  
+    -drkBtn (button)
+    -overlay (css)
+    -EventListener (click)
     <br>
     <br>
 3. **THUMBNAIL IMAGES BAR:**
-    * array of images in thumbnail size
+    * row(s) of the images in a thumbnail size
     * all thumbnails need to be the same size vertically, (20%)
-    * clicking on thumbnail displays full image in Large Image Box
-    * create a border to define each thumbnail visually
-    **PROPERTIES**  
+    * clicking on thumbnail displays full image in Large Image Box  
+    ***PROPERTIES***  
     -arrayPics20h  
-    -thumbBar
+    -thumb-bar (css)
     <br>
     <br>
+
 
 ## Functionality:
 
@@ -48,6 +52,11 @@
     FUNCTION click darkLightButton
         * displays overlay over full-img
         * removes overlay
+
+**EXTRA**
+
+    FUNCTION randomImage
+        * selects a random image display as the full.img  
 
 ## START: Start program
 
