@@ -14,7 +14,7 @@
     ***PROPERTIES***  
     -array: images (array listing file name of each image)  
     -array: altText (object listing the alt text for each image)  
-    -displayedImg (displayed selected image)  
+    -displayedImage (displayed selected image)  
     -.full-img (css)  
     <br>
 2. **DARKEN FEATURE:**
@@ -23,7 +23,8 @@
     * removes overlay to lighten image
     <br> 
     ***PROPERTIES***  
-    -drkBtn (button)  
+    -btn (button)
+    -overlay  
     -EventListener: changeBtn (click to place or remove overlay)  
     -.overlay (css)  
     -button (css)  
@@ -34,7 +35,7 @@
     * clicking on thumbnail displays full image in Large Image Box  
     ***PROPERTIES***  
     -thumbBar (thumbnail images)  
-    -EventListener: newImage (click for a new displayedImg)  
+    -EventListener: newImage (click for a new displayedImage)  
     -thumb-bar (css)
     <br>
     <br>
@@ -45,12 +46,12 @@
 **IMAGE GALLERY**  
 
     FUNCTION: display image in Large Image Box
-        * displayedImg
+        * displayedImage
         * images
         * altText
         
     FUNCTION: click button
-        * drkBtn
+        * btn
         * changeBtn
     
     FUNCTION: display thumbnail images
@@ -61,19 +62,20 @@
 
 **EXTRA**
 
-    FUNCTION: randomly selects a displayedImg
+    FUNCTION: randomly selects a displayedImage
         * randomImage
 
 ## START: Start program
 
     full-img
-        displayedImg
+        displayedImage
         image
         altText
         overlay
-        drkBtn
+        btn
         changeBtn
-    thumbBar
+    thumb-bar
+        thumbBar
         newImage
 
 ## END: End program  
